@@ -1,7 +1,8 @@
 # 💳 Payments Microservice
 
 > [!IMPORTANT]
-> If this project is running **individually**, without the `products-launcher`, ensure that the NATS server is running and properly configured. The `client-gateway` communicates with this microservice via the NATS server, which acts as a middleman and connects all microservices.
+> If this project is running **individually**, without the `products-launcher`, ensure that the NATS server is running and properly configured. The `client-gateway` communicates through the NATS server with `orders-ms`, which communicates with the `payments-ms` when creating an order.
+
 
 ## 📦 Installation
 
